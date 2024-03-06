@@ -53,7 +53,7 @@ def main():
             for dlul in DLUL:
                 for mimo in MIMOLayers:
                     throughput = throughput_calculation(mod, bnd, dlul, mimo)  # Calculating throughput for each combination
-                    text = f"{' Entradas ':-^20} | {' Valores ':-^20} | {f' throughput ':-^20}\n"
+                    text = f"{' Inputs ':-^20} | {' Values ':-^20} | {f' throughput ':-^20}\n"
                     text += f"{' MIMOLayers ':^20} | {mimo:^20} | {f' ':^20}\n"
                     text += f"{' bndWdth ':^20} | {bnd:^20} | {throughput:^20}\n"
                     text += f"{' modOrder ':^20} | {mod:^20} | {f' ':^20}\n"
